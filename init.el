@@ -42,8 +42,7 @@
  '(show-paren-match ((((class color) (background dark)) (:inherit nil :foreground "red")))))
 
 
-(define-key global-map (kbd "C-+") 'text-scale-increase)
-(define-key global-map (kbd "C--") 'text-scale-decrease)
+(load-library "iso-insert")
 
 (define-key global-map (kbd "M-a") 'insert-a-umlaut)
 (define-key global-map (kbd "M-o") 'insert-o-umlaut)
