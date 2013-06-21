@@ -40,3 +40,14 @@
  '(font-lock-warning-face ((t (:inherit nil :foreground "red" :background nil))))
  '(linum-highlight-face ((t (:inherit default :background "color-238" :foreground "white"))))
  '(show-paren-match ((((class color) (background dark)) (:inherit nil :foreground "red")))))
+
+
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
+
+(define-key global-map (kbd "M-a") 'insert-a-umlaut)
+(define-key global-map (kbd "M-o") 'insert-o-umlaut)
+(define-key global-map (kbd "M-u") 'insert-u-umlaut)
+(define-key global-map (kbd "M-A") 'insert-A-umlaut)
+(define-key global-map (kbd "M-O") 'insert-O-umlaut)
+(define-key global-map (kbd "M-U") 'insert-U-umlaut)
