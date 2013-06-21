@@ -52,5 +52,7 @@
 (define-key global-map (kbd "M-U") 'insert-U-umlaut)
 
 (set-face-attribute 'default nil :height 165)
+(require 'color-theme)
+
 
 
