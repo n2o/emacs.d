@@ -15,6 +15,7 @@
                       clojure-mode
                       nrepl
                       rainbow-delimiters
+                      midje-mode
                       ;; Project navigation
                       projectile
                       ack-and-a-half
@@ -54,5 +55,5 @@
 (set-face-attribute 'default nil :height 165)
 (require 'color-theme)
 
-
-
+(require 'midje-mode)
+(add-hook 'clojure-mode-hook 'midje-mode)
