@@ -13,7 +13,8 @@
                       starter-kit-lisp
                       ;; Clojure & friends
                       clojure-mode
-                      nrepl
+                      cider
+                      cider-tracing
                       rainbow-delimiters
                       midje-mode
                       ;; Project navigation
@@ -22,6 +23,7 @@
                       ;; Misc.
                       markdown-mode
                       twilight-theme
+                      nyan-mode
                       hlinum)
   "A list of packages to ensure are installed at launch.")
 
@@ -53,7 +55,9 @@
 (define-key global-map (kbd "M-U") 'insert-U-umlaut)
 
 (set-face-attribute 'default nil :height 165)
-(require 'color-theme)
+
 
 (require 'midje-mode)
 (add-hook 'clojure-mode-hook 'midje-mode)
+
+(nyan-mode)
