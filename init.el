@@ -24,7 +24,9 @@
                       markdown-mode
                       twilight-theme
                       nyan-mode
-                      hlinum)
+                      hlinum
+                      color-theme
+                      windmove)
   "A list of packages to ensure are installed at launch.")
 
 ;; Automaticaly install any missing packages
@@ -61,3 +63,12 @@
 (add-hook 'clojure-mode-hook 'midje-mode)
 
 (nyan-mode)
+ (require 'color-theme)
+ (color-theme-initialize)
+; (color-theme-robin-hood)
+
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
+
+
