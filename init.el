@@ -26,6 +26,7 @@
                       nyan-mode
                       hlinum
                       color-theme
+                      color-theme-solarized
                       windmove)
   "A list of packages to ensure are installed at launch.")
 
@@ -43,7 +44,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(font-lock-warning-face ((t (:inherit nil :foreground "red" :background nil))))
- '(linum-highlight-face ((t (:inherit default :background "color-238" :foreground "white"))))
+ '(linum-highlight-face ((t (:inherit default :background "color-238" :foreground "white"))) t)
  '(show-paren-match ((((class color) (background dark)) (:inherit nil :foreground "red")))))
 
 
@@ -65,10 +66,25 @@
 (nyan-mode)
  (require 'color-theme)
  (color-theme-initialize)
+(load-theme 'solarized-dark t)
+ 
 ; (color-theme-robin-hood)
 
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
+  (defun esk-pretty-fn ()
+    (font-lock-add-keywords nil `(("(\\(\\<fn\\>\\)"
+                                   (0 (progn (compose-region (match-beginning 1)
+                                                             (match-end 1)
+                                                             "\u03BB"
+                                                             'decompose-region)))))))
 
 
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "1f3304214265481c56341bcee387ef1abb684e4efbccebca0e120be7b1a13589" default))))
