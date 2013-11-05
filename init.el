@@ -80,6 +80,12 @@
                                                              "\u03BB"
                                                              'decompose-region)))))))
 
+(add-to-list 'load-path "~/.emacs.d/manual-pkgs/")
+
+(require 'windata)
+(require 'tree-mode)
+(require 'dirtree)
+
 
 
 (custom-set-variables
