@@ -27,7 +27,8 @@
                       hlinum
                       color-theme
                       color-theme-solarized
-                      windmove)
+                      windmove
+                      yasnippet)
   "A list of packages to ensure are installed at launch.")
 
 ;; Automaticaly install any missing packages
@@ -86,6 +87,9 @@
 (require 'tree-mode)
 (require 'dirtree)
 
+
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+(yas-global-mode 1)
 
 
 (custom-set-variables
