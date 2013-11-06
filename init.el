@@ -57,6 +57,7 @@
 (define-key global-map (kbd "M-A") 'insert-A-umlaut)
 (define-key global-map (kbd "M-O") 'insert-O-umlaut)
 (define-key global-map (kbd "M-U") 'insert-U-umlaut)
+(define-key global-map (kbd "M-z") 'smex)
 
 (set-face-attribute 'default nil :height 165)
 
