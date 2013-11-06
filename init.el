@@ -63,6 +63,10 @@
 (define-key global-map (kbd "s-3") 'smex) ;; eclipse style cmd-3 (MAC OS)
 (define-key global-map (kbd "s-1") 'dirtree) ;;
 
+
+(define-key global-map (kbd "C-x f") 'ido-find-file) ;; Because I trigger it accidently all the time
+
+
 (set-face-attribute 'default nil :height 165)
 
 
