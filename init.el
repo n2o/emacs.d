@@ -51,13 +51,17 @@
 
 (load-library "iso-insert")
 
-(define-key global-map (kbd "M-a") 'insert-a-umlaut)
+;; US-Keyboard & Umlaute
+(define-key global-map (kbd "M-a") 'insert-a-umlaut) 
 (define-key global-map (kbd "M-o") 'insert-o-umlaut)
 (define-key global-map (kbd "M-u") 'insert-u-umlaut)
 (define-key global-map (kbd "M-A") 'insert-A-umlaut)
 (define-key global-map (kbd "M-O") 'insert-O-umlaut)
 (define-key global-map (kbd "M-U") 'insert-U-umlaut)
-(define-key global-map (kbd "M-z") 'smex)
+
+(define-key global-map (kbd "M-z") 'smex) ;; Because I trigger it accidently all the time
+(define-key global-map (kbd "s-3") 'smex) ;; eclipse style cmd-3 (MAC OS)
+(define-key global-map (kbd "s-1") 'dirtree) ;;
 
 (set-face-attribute 'default nil :height 165)
 
