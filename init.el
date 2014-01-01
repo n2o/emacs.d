@@ -17,6 +17,7 @@
                       cider-tracing
                       rainbow-delimiters
                       midje-mode
+                      clojure-cheatsheet
                       ;; Project navigation
                       projectile
                       ack-and-a-half
