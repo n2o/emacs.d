@@ -101,6 +101,7 @@
 (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
 
+(load-theme 'wombat)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
