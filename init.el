@@ -49,6 +49,13 @@
  '(linum-highlight-face ((t (:inherit default :background "color-238" :foreground "white"))) t)
  '(show-paren-match ((((class color) (background dark)) (:inherit nil :foreground "red")))))
 
+(defun iwb ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil)
+  (untabify (point-min) (point-max)))
+
 
 (load-library "iso-insert")
 
@@ -63,7 +70,7 @@
 (define-key global-map (kbd "M-z") 'smex) ;; Because I trigger it accidently all the time
 (define-key global-map (kbd "s-3") 'smex) ;; eclipse style cmd-3 (MAC OS)
 (define-key global-map (kbd "s-1") 'dirtree) ;;
-
+(define-key global-map (kbd "s-f") 'iwb)
 
 (define-key global-map (kbd "C-x f") 'ido-find-file) ;; Because I trigger it accidently all the time
 
