@@ -10,9 +10,3 @@ He used a config originally created by Ryan Neufeld (https://gist.github.com/rkn
 
 - Use smooth scrolling line by line for better usage with the Macbook Pro's Touchpad
 - Use the CMD button as the META button
-- German Umlauts are accessible via M-a, M-u and M-o
-- Added Yasnippets
-- smex is triggered via either M-x, M-z or s-3 (s is CMD on a Mac)
-- dirtree is triggered using s-1
-- Shift-Arrows navigate between frames
-- fn is shown as a lambda symbol rather than f
