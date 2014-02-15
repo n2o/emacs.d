@@ -1,11 +1,13 @@
 # Emacs.d 
 
-This is my personal .emacs.de config focused on Clojure development. I use it on a Mac with US Keyboard-Layout.
+I am using a german Mac Keyboard Layout and edited some little changes to fit better to a Mac.
 
-I used a config originally created by Ryan Neufeld (https://gist.github.com/rkneufeld/5126926)
+This configuration was forked from [bendisposto](http://www.github.com/bendisposto/emacs.d) and used a config originally created by Ryan Neufeld (https://gist.github.com/rkneufeld/5126926)
 
 # Changes
 
+- Use smooth scrolling line by line for better usage with the Macbook Pro's Touchpad
+- Use the CMD button as the META button
 - German Umlauts are accessible via M-a, M-u and M-o
 - Added Yasnippets
 - smex is triggered via either M-x, M-z or s-3 (s is CMD on a Mac)
