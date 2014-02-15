@@ -6,6 +6,17 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; Set the command key to be the meta button
+(setq mac-command-modifier 'meta
+  mac-option-modifier 'none
+  default-input-method "MacOSX")
+
+;; scroll one line at a time (less "jumpy" than defaults)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit
                       starter-kit-bindings
